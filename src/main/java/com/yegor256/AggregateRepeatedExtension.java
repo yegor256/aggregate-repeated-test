@@ -68,15 +68,12 @@ public final class AggregateRepeatedExtension implements TestTemplateInvocationC
                                     // ignore it
                                 }
                             }
-                            elapsed = System.nanoTime() - start;
-                            System.out.printf("Test %s took %.3f ms (aggregated over %d runs)%n",
-                                ctx.getDisplayName(), elapsed / 1_000_000.0, repeats);
                             Files.write(
-                                Paths.get("/tmp/aggregate-repeated-tests.txt"),
+                                Paths.get("/tmp/aggregate-repeated-test.txt"),
                                 Collections.singletonList(
                                     String.format(
                                         "%s %d",
-                                        ctx.getDisplayName(), elapsed / 1_000L
+                                        ctx.getDisplayName(), System.nanoTime() - start
                                     )
                                 ),
                                 StandardOpenOption.CREATE,
