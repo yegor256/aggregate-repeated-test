@@ -13,6 +13,7 @@ The test method will be executed the specified number of times.
 For example, the following test method will be executed 10 times:
 
 ```java
+import com.yegor256.AggregateRepeatedTest;
 @AggregateRepeatedTest(10)
 void testSomething() {
     // test code here
