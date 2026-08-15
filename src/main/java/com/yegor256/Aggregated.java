@@ -19,7 +19,6 @@ import org.junit.jupiter.api.extension.TestTemplateInvocationContext;
 /**
  * Single invocation of a test that must be repeated a few times, while
  * the time of all repetitions is measured together.
- *
  * @since 0.1.0
  */
 final class Aggregated implements TestTemplateInvocationContext {

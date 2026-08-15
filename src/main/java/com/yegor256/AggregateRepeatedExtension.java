@@ -12,7 +12,6 @@ import org.junit.jupiter.api.extension.TestTemplateInvocationContextProvider;
 /**
  * JUnit5 extension that runs a test method a few times in a row and
  * reports how long all of them took together.
- *
  * @since 0.1.0
  */
 public final class AggregateRepeatedExtension implements TestTemplateInvocationContextProvider {
