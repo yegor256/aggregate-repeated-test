@@ -12,6 +12,8 @@ import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 /**
+ * Mark a test method that must be repeated a few times, with the total
+ * time of all repetitions reported as one number.
  *
  * @since 0.1.0
  */
