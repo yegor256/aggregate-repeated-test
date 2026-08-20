@@ -58,11 +58,6 @@ final class Aggregated implements TestTemplateInvocationContext {
         );
     }
 
-    /**
-     * Repeat the test method and save the total time to the report.
-     * @param ctx The context of the test that has just finished
-     * @throws Exception If the test method fails
-     */
     private void report(final ExtensionContext ctx) throws Exception {
         for (int idx = 0; idx < this.repeats; idx += 1) {
             ctx.getRequiredTestMethod().invoke(ctx.getRequiredTestInstance());
