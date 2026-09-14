@@ -13,6 +13,7 @@ import org.junit.platform.launcher.core.LauncherFactory;
 
 /**
  * Test case for {@link AggregateRepeatedExtension}.
+ *
  * @since 0.1.0
  */
 final class AggregateRepeatedExtensionTest {

@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Fake test case that counts how many times it was called by JUnit
  * together with {@link AggregateRepeatedExtension}.
+ *
  * @since 0.1.0
  */
 final class RepeatedFake {
